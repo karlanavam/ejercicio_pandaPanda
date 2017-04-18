@@ -55,3 +55,23 @@ img {
   width: 15%;
   margin-top: 20px;
 }
+
+/*secciones*/
+.secciones {
+  display: inline-block;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 125px;
+}
+
+.secciones div{
+  background-color: #C7FFEB;
+  text-align: center;
+  color: # #FB7293;
+  font-family: 'Coming Soon', cursive;
+  padding: 10px;
+}
+
+.secciones article {
+  text-align : justify;
+}
