@@ -24,20 +24,34 @@ li {
   font-size: 1.5em;
   font-family: 'Coming Soon', cursive;
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   list-style: none;
   color: #F82690;
 }
 
 a {
   font-family: 'Coming Soon', cursive;
-  padding-left: 110px;
+  padding-left: 145px;
   text-decoration: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+  text-align: center;
 }
 
 a:hover {
     background-color: #C4FFE0;
+}
+
+/*PANDAS*/
+
+.pandas {
+  display: inline;
+  margin-left: 186px;
+  margin-top: 50px;
+}
+
+img {
+  width: 15%;
+  margin-top: 20px;
 }
