@@ -1,19 +1,24 @@
-// imagenes
+// imagenes borrar
 var divImagen = document.getElementsByClassName('pandas')[0];
-var span = [];
+var span = document.getElementsByClassName("close");
 
-for (var i = 0; i < 3; i++){
-  span[i]=document.getElementsByClassName("close")[0];
-  span[i].addEventListener("click",cerrar);
+for (var i = 0; i < span.length; i++){
+  //span[i] = document.getElementsByClassName("close")[0];
+  span[i].addEventListener("click",function(){cerrar(this)});
 }
 
-function cerrar() {
-  divImagen.style.display = "none";
-  span.style.display = "none";
+function cerrar(esto) {
+  esto.parentNode.style.display="none";
+
+  //divImagen.style.display = "none";
+  //span.style.display = "none";
  }
 
-// textos y botones
+ // function identificarSpan () {
+ //  cerrar(this)
+ // }
 
+// textos y botones
 var botonOrigen = document.getElementById("botonOrigen");
 var textoOrigen = document.getElementById('textoOrigen');
 
@@ -40,11 +45,12 @@ function ocultarH() {
   textoHistoria.style.visibility = "hidden";
 }
 
-// Restaurar
+
+// Restaurar imagenes
 var botonRestaurar = document.getElementById('botonRestaurar');
 
 botonRestaurar.addEventListener("click", restaurarImagenes);
 
 function restaurarImagenes() {
-  divImagen.style.display = "block";
+  divImagen.style.display = "inline";
 }
